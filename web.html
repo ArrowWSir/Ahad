@@ -45,12 +45,10 @@
         <h1>Portfolio</h1>
         <div class="portfolio-content">
             <div class="project">
-                <h2>HTML Code</h2>
-                <button onclick="openProjectDetails('project1')">More Details</button>
+                <h2><a href="https://github.com/ArrowWSir/Ahad/blob/main/web.html" target="_blank">HTML Codes for the Website</a></h2>
             </div>
             <div class="project">
                 <h2>Project 2</h2>
-                <button onclick="openProjectDetails('project2')">More Details</button>
             </div>
         </div>
     </section>
@@ -63,76 +61,6 @@
     </div>
 
     <script>
-        function openProjectDetails(projectId) {
-            const details = {
-                project1: '<h2>HTML Code</h2><pre>' +
-                          `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-size: 12px;
-        }
-
-        .profile-image {
-            width: 4em;  /* Half the original size (4 times the font size) */
-            height: auto;
-        }
-
-        .interest-image {
-            width: 8em;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-
-    <section id="about">
-        <h1>About Me</h1>
-        <div class="about-content">
-            <img src="458732635_1682873919232908_6609174444088284152_n.jpg" alt="Placeholder for profile image" class="profile-image">
-            <p>Hi there! I am a dedicated Computer Science student with a strong passion for programming and problem-solving. I specialize in Python, Java, and HTML, and I am continually exploring new technologies to enhance my skill set. I have a keen interest in both the back-end and front-end aspects of software development, and I am always excited to take on new challenges.</p>
-            <p>In addition to software engineering, I bring experience in software testing and graphic design, which helps me understand user expectations and deliver polished, user-friendly applications. I thrive in team environments, adapt quickly to new situations, and enjoy learning from others to grow as a professional.</p>
-        </div>
-    </section>
-
-    <section id="technical-interests">
-        <h1>Technical Interests</h1>
-        <div class="interests-content">
-            <img src="keeping-his-focus-as-he-cracks-the-code.jpg" alt="Placeholder for technical interests" class="interest-image">
-            <p>I am passionate about software engineering, with a particular interest in creating efficient and scalable systems. I enjoy working on the back-end to ensure robust performance, while also contributing to the front-end to deliver intuitive and visually appealing interfaces. My experience in software testing complements this by ensuring the quality and reliability of applications.</p>
-            <p>I also have a background in graphic design, which influences my approach to user interface design. This combination of technical and creative skills allows me to build solutions that are not only functional but also engaging for users. I am constantly exploring new frameworks, tools, and methodologies to stay ahead in the fast-paced world of technology.</p>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h1>Portfolio</h1>
-        <div class="portfolio-content">
-            <div class="project">
-                <h2>HTML Code</h2>
-                <button onclick="openProjectDetails('project1')">More Details</button>
-            </div>
-            <div class="project">
-                <h2>Project 2</h2>
-                <button onclick="openProjectDetails('project2')">More Details</button>
-            </div>
-        </div>
-    </section>
-
-</body>
-</html>` +
-                          '</pre>',
-                project2: '<h2>Project 2</h2><p>Details about Project 2 go here.</p>'
-            };
-
-            document.getElementById('project-details').innerHTML = details[projectId];
-            document.getElementById('project-details-modal').style.display = 'block';
-        }
-
         function closeModal() {
             document.getElementById('project-details-modal').style.display = 'none';
         }
